@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic-Italic.eot');
+    src: local('Century Gothic Italic'), local('CenturyGothic-Italic'),
+    url('../fonts/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CenturyGothic-Italic.woff') format('woff'),
+    url('../fonts/CenturyGothic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic.eot');
+    src: local('Century Gothic'), local('CenturyGothic'),
+    url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CenturyGothic.woff') format('woff'),
+    url('../fonts/CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic-Bold.eot');
+    src: local('Century Gothic Bold'), local('CenturyGothic-Bold'),
+    url('../fonts/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CenturyGothic-Bold.woff') format('woff'),
+    url('../fonts/CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic-BoldItalic.eot');
+    src: local('Century Gothic Bold Italic'), local('CenturyGothic-BoldItalic'),
+    url('../fonts/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CenturyGothic-BoldItalic.woff') format('woff'),
+    url('../fonts/CenturyGothic-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    height: 3000px;
+    font-family: "Century Gothic", sans-serif;
+}
+.sticky-header {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    z-index: 99999999999999;
+    top: 0;
+    border-bottom: 2px solid gray;
+}
+nav {
+    height: 100px;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+}
+nav img {
+    margin-top: 18px;
+}
+
+.navbar-collapse { /*обертка кнопок нав */
+    justify-content: flex-end;
+}
+
+.nav-item a {
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+    color: black;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.nav-item a:hover {
+    color: royalblue;
+}
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.top-banner {
+    height: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.row > div {
+    padding: 0;
+}
+
+.top-banner-left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/new-left.png") no-repeat center;
+    background-size: cover;
+    padding: 25% 0;
+}
+
+.top-banner-left a {
+    font-size: 20px;
+    color: #254186;
+    background-color: #fff;
+    padding: 12px 25px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.aboutUs, .menu {
+    max-width: 1400px;
+    padding: 0 50px;
+    margin: 100px auto 0;
+    display: flex;
+
+}
+
+.aboutUs h3 {
+    display: flex;
+    align-items: center;
+}
+
+.aboutUs h3:before, .menu h3:before {
+    display: inline-block;
+    content: ' ';
+    width: 30px;
+    height: 1px;
+    background-color: royalblue;
+    margin-right: 10px;
+}
+
+.aboutUs h2 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #2a2a2a;
+}
+
+.aboutUs p {
+    font-weight: normal;
+    width: 90%;
+}
+
+.aboutUs ul {
+    display: flex;
+    padding: 0;
+}
+
+.aboutUs ul li {
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+}
+
+.aboutUs ul li:first-child {
+    background: url("../img/about-thumb-01.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.aboutUs ul li:nth-child(2) {
+    background: url("../img/about-thumb-02.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.aboutUs ul li:last-child {
+    background: url("../img/about-thumb-03.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.vid {
+    padding-top: 60px;
+}
